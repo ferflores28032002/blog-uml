@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBlog - Julia Walker's Personal Blog</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="light-theme">
+    <!--
+    - #HEADER
+  -->
+
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#">
+            <img
+              src="./assets/images/logo-light.svg"
+              alt="Devblog's logo"
+              width="150"
+              height="40"
+              class="logo-light"
+            />
+            <img
+              src="./assets/images/logo-dark.svg"
+              alt="Devblog's logo"
+              width="150"
+              height="40"
+              class="logo-dark"
+            />
+          </a>
+
+          <div class="btn-group">
+            <button class="theme-btn theme-btn-mobile light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+
+            <button class="nav-menu-btn">
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="flex-wrapper">
+            <ul class="desktop-nav">
+              <li>
+                <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="nav-link">
+
+                  ¿Qué es UML?
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://es.wikipedia.org/wiki/Historia_de_UML" target="_blank" class="nav-link">Sobre UML</a>
+              </li>
+            
+              
+            </ul>
+            
+
+            <button class="theme-btn theme-btn-desktop light">
+              <ion-icon name="moon" class="moon"></ion-icon>
+              <ion-icon name="sunny" class="sun"></ion-icon>
+            </button>
+          </div>
+
+          <div class="mobile-nav">
+            <button class="nav-close-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="wrapper">
+              <p class="h3 nav-title">Menú Principal</p>
+            
+              <ul>
+                <li class="nav-item">
+                  <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="nav-link">Inicio</a>
+                </li>
+            
+                <li class="nav-item">
+                  <a href="https://es.wikipedia.org/wiki/Historia_de_UML" target="_blank" class="nav-link">Sobre UML</a>
+                </li>
+            
+                <li class="nav-item">
+                  <a href="https://es.wikipedia.org/wiki/Metamodelo" target="_blank" class="nav-link">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            
+
+            <div>
+              <p class="h3 nav-title">Topics</p>
+
+              <ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Database</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Accessibility</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Web Performance</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--
+      - #HERO SECTION
+    -->
+
+      <div class="hero">
+        <div class="container">
+          <div class="left">
+            <h1 class="h1">
+              Bienvenidos al Blog de UML
+            </h1>
+          
+            <p class="h3">
+              Explorando el <abbr title="Unified Modeling Language">Lenguaje Unificado de Modelado (UML)</abbr>, 
+              sus diagramas, historia y cómo puede transformar el desarrollo de software.
+            </p>
+          
+            <div class="btn-group">
+              <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="btn btn-primary">Aprende más sobre UML</a>
+              <a href="https://es.wikipedia.org/wiki/Historia_de_UML" target="_blank" class="btn btn-secondary">Historia de UML</a>
+            </div>
+          </div>
+          
+
+          <div class="right">
+            <div class="pattern-bg"></div>
+            <div class="img-box">
+              <!-- <img
+                src="https://iset.uvt.tn/pluginfile.php/2615557/course/overviewfiles/images%20%281%29.png"
+                alt="Julia Walker"
+                class="hero-img"
+              /> -->
+              <div class="shape shape-1"></div>
+              <div class="shape shape-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="container">
+          <!--
+          - BLOG SECTION
+        -->
+
+          <div class="blog">
+            <h2 class="h2">Última publicación de blog</h2>
+
+            <div class="blog-card-group">
+              <div class="blog-card">
+                <div class="blog-card-banner">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7G2W7td5_5ktn_d9Vy86qr7lLCHpj_TjTFw&s"
+                    alt="Building microservices with Dropwizard, MongoDB & Docker"
+                    width="250"
+                    class="blog-banner-img"
+                  />
+                </div>
+
+                <div class="blog-content-wrapper">
+                  <button class="blog-topic text-tiny">
+                    UML - PROGRAMACION
+                  </button>
+
+                  <h3>
+                    <a href="https://www.lucidchart.com/pages/es/que-es-el-lenguaje-unificado-de-modelado-uml#:~:text=un%20diagrama%20UML-,%C2%BFQu%C3%A9%20es%20UML%3F,en%20estructura%20como%20en%20comportamiento." class="h3"> ¿Qué es UML? </a>
+                  </h3>
+
+                  <p class="blog-text">
+                    El Lenguaje Unificado de Modelado (UML) fue creado para
+                    forjar un lenguaje de modelado visual común y semántica y
+                    sintácticamente rico para la arquitectura
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://st4.depositphotos.com/2547605/40947/v/950/depositphotos_409472588-stock-illustration-uml-unified-modeling-language-acronym.jpg"
+                  alt="Historia de UML"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - HISTORIA
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="h3">
+                    Historia del UML
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  UML fue creado por Grady Booch, James Rumbaugh e Ivar Jacobson en los años 90 para unificar diversas metodologías orientadas a objetos.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://images.edrawsoft.com/articles/class-diagram-relationship/class-in-uml.png"
+                  alt="Diagrama de clases"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_clases" target="_blank" class="h3">
+                    Diagrama de clases
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Este diagrama es fundamental en UML, representa las clases y sus relaciones, crucial para el diseño orientado a objetos.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://www.tutorialspoint.com/object_oriented_analysis_design/images/component_diagram.jpg"
+                  alt="Diagrama de componentes"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_componentes" target="_blank" class="h3">
+                    Diagrama de componentes
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Muestra la organización física del sistema y las dependencias entre componentes. Esencial en la implementación.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/deployment-diagram/deployment-diagram-example-700x412@2x.jpeg"
+                  alt="Diagrama de despliegue"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_despliegue" target="_blank" class="h3">
+                    Diagrama de despliegue
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Este diagrama muestra la distribución física de componentes en hardware, útil para visualizar la infraestructura.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/17/Object_diagram.png"
+                  alt="Diagrama de objetos"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_objetos" target="_blank" class="h3">
+                    Diagrama de objetos
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Este diagrama representa instancias de clases en un momento dado, útil para comprobar la estructura de un sistema.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://images.edrawmax.com/images/knowledge/package-diagram/package-diagram-example.jpg"
+                  alt="Diagrama de paquetes"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_paquetes" target="_blank" class="h3">
+                    Diagrama de paquetes
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Agrupa elementos del sistema y muestra las dependencias entre ellos. Facilita la organización del modelo.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://www.sparxsystems.com/images/screenshots/uml2_tutorial/CP01.GIF"
+                  alt="Diagrama de estructura compuesta"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - ESTRUCTURAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_estructura_compuesta" target="_blank" class="h3">
+                    Diagrama de estructura compuesta
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Detalla la estructura interna de una clase, mostrando cómo interactúan sus partes y los conectores internos.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://i1.wp.com/www.somosbinarios.es/wp-content/uploads/2021/06/plantuml.png?resize=348%2C306&ssl=1"
+                  alt="Diagrama de actividades"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - COMPORTAMIENTO
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_actividades" target="_blank" class="h3">
+                    Diagrama de actividades
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Modela los flujos de trabajo o procesos del sistema, mostrando actividades secuenciales o concurrentes.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/UML_diagrama_caso_de_uso.svg/640px-UML_diagrama_caso_de_uso.svg.png"
+                  alt="Diagrama de casos de uso"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - COMPORTAMIENTO
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_casos_de_uso" target="_blank" class="h3">
+                    Diagrama de casos de uso
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Muestra cómo los actores interactúan con el sistema a través de funciones específicas (casos de uso).
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/what-is-a-state-diagram-in-UML/state_diagram_basic_example-500x281.PNG"
+                  alt="Diagrama de máquina de estados"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - COMPORTAMIENTO
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_estados" target="_blank" class="h3">
+                    Diagrama de máquina de estados
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Modela los estados por los que pasa un objeto en su vida, y cómo transita entre estados en función de eventos.
+               Aquí tienes la continuación de las cards:
+            
+          
+                </h3>
+            
+                <p class="blog-text">
+                  Modela los estados por los que pasa un objeto en su vida, y cómo transita entre estados en función de eventos.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/sequence-diagram-for-hospital-management-system-UML/sequence_diagram_hospital-900x982.png"
+                  alt="Diagrama de secuencia"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - INTERACCIÓN
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_secuencia" target="_blank" class="h3">
+                    Diagrama de secuencia
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Muestra cómo los objetos interactúan a lo largo del tiempo, mediante el intercambio de mensajes en un orden específico.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://support.content.office.net/es-es/media/58c4729d-b4b8-4e32-90d1-8721a43c436c.png"
+                  alt="Diagrama de comunicación"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - INTERACCIÓN
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_comunicación" target="_blank" class="h3">
+                    Diagrama de comunicación
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Modela cómo los objetos se comunican entre sí mediante mensajes, mostrando la estructura interna de la interacción.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://www.sg.com.mx/images/stories/200706/uml_figura2.gif"
+                  alt="Diagrama de tiempos"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - INTERACCIÓN
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_de_tiempos" target="_blank" class="h3">
+                    Diagrama de tiempos
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Este diagrama representa los cambios de estado de los objetos a lo largo del tiempo, ideal para sistemas en tiempo real.
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://arevalomaria.wordpress.com/wp-content/uploads/2010/11/diagramacolaboracion.png"
+                  alt="Diagrama global de interacciones"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - INTERACCIÓN
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Diagrama_global_de_interacciones" target="_blank" class="h3">
+                    Diagrama global de interacciones
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  Este diagrama proporciona una visión general del flujo de control entre los nodos que interactúan en un sistema.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Additional cards -->
+            <div class="blog-card">
+              <div class="blog-card-banner">
+                <img
+                  src="https://images.ctfassets.net/w6r2i5d8q73s/7E3OKVM8hvs1GKW2VytUbV/3324efbacb24eb666fb850640d4a51d2/UML_Diagramm_Unternehmensfu_hrung.png"
+                  alt="UML"
+                  width="250"
+                  class="blog-banner-img"
+                />
+              </div>
+            
+              <div class="blog-content-wrapper">
+                <button class="blog-topic text-tiny">
+                  UML - GENERAL
+                </button>
+            
+                <h3>
+                  <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="h3">
+                    ¿Qué es UML?
+                  </a>
+                </h3>
+            
+                <p class="blog-text">
+                  El Lenguaje Unificado de Modelado (UML) fue desarrollado para unificar las metodologías de modelado orientadas a objetos en los años 90.
+                </p>
+              </div>
+            </div>
+            <button class="btn load-more">
+            
+            <a href="https://www.lucidchart.com/pages/es/que-es-el-lenguaje-unificado-de-modelado-uml#:~:text=un%20diagrama%20UML-,%C2%BFQu%C3%A9%20es%20UML%3F,en%20estructura%20como%20en%20comportamiento." style="text-decoration: none; background-color: inherit; color: inherit;">
+
+                
+                Leer más
+              </a>
+            </button>
+          </div>
+
+          <!--
+          - ASIDE
+        -->
+
+          <div class="aside">
+            <div class="topics">
+              <h2 class="h2">Temas</h2>
+            
+              <a href="https://es.wikipedia.org/wiki/Historia_de_UML" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="book-outline"></ion-icon>
+                </div>
+                <p>Historia de UML</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Object_Management_Group" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+                <p>Object Management Group</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Metamodelo" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="construct-outline"></ion-icon>
+                </div>
+                <p>Metamodelo en UML</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Lenguaje_de_Restricciones_de_Objetos" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="options-outline"></ion-icon>
+                </div>
+                <p>Lenguaje de Restricciones</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Modelo_conceptual" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+                <p>Modelo Conceptual UML</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Versiones_de_UML" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="git-branch-outline"></ion-icon>
+                </div>
+                <p>Versiones de UML</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/UML_2.0" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="refresh-outline"></ion-icon>
+                </div>
+                <p>UML 2.0</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_inversa" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="sync-outline"></ion-icon>
+                </div>
+                <p>Ingeniería Inversa</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Unified_Process" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+                <p>Proceso Unificado</p>
+              </a>
+            
+              <a href="https://es.wikipedia.org/wiki/Tool_Integration_Framework" class="topic-btn" target="_blank">
+                <div class="icon-box">
+                  <ion-icon name="extension-puzzle-outline"></ion-icon>
+                </div>
+                <p>Herramientas UML</p>
+              </a>
+            </div>
+            
+
+            <div class="tags">
+              <h2 class="h2">Tags</h2>
+
+              <div class="wrapper">
+                <button class="hashtag">#UML</button>
+                <button class="hashtag">#Metamodelo</button>
+                <button class="hashtag">#OCL</button>
+                <button class="hashtag">#ModeloConceptual</button>
+                <button class="hashtag">#VersionesUML</button>
+                <button class="hashtag">#UML2.0</button>
+                <button class="hashtag">#IngenieriaInversa</button>
+                <button class="hashtag">#OMG</button>
+              </div>
+              
+            </div>
+
+            <div class="contact">
+              <h2 class="h2">Hablemos!!</h2>
+
+              <div class="wrapper">
+                <p>
+                  Si te interesa saber cómo el Lenguaje Unificado de Modelado (UML) puede optimizar la arquitectura de redes de tu empresa o ayudarte a resolver otros desafíos clave, podemos explorarlo juntos. UML ofrece herramientas poderosas para mapear infraestructuras de red, mejorar los flujos de comunicación y simplificar el diseño de sistemas. Ya sea para mejorar la eficiencia, identificar cuellos de botella o escalar soluciones, estoy aquí para ayudarte. ¡Hablemos y diseñemos una estrategia adaptada a tus necesidades específicas!
+                </p>
+
+                <ul class="social-link">
+                  <li>
+                    <a href="#" class="icon-box discord">
+                      <ion-icon name="logo-discord"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="icon-box twitter">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="icon-box facebook">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="newsletter">
+              <h2 class="h2">Hoja informativa</h2>
+
+              <div class="wrapper">
+                <p>
+                 Suscríbete a mi boletín para recibir actualizaciones sobre UML, nuevas publicaciones de blog y más.
+                </p>
+
+                <form action="#">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                  />
+
+                  <button type="submit" class="btn btn-primary">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--
+    - #FOOTER
+  -->
+
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="footer-logo">
+            <img
+              src="./assets/images/logo-light.svg"
+              alt="DevBlog's Logo"
+              width="150"
+              height="40"
+              class="logo-light"
+            />
+            <img
+              src="./assets/images/logo-dark.svg"
+              alt="DevBlog's Logo"
+              width="150"
+              height="40"
+              class="logo-dark"
+            />
+          </a>
+
+          <p class="footer-text">
+           Un blog personal de Fernando Flores sobre UML, un lenguaje de modelado visual para sistemas de software.
+          </p>
+        </div>
+
+
+<div class="wrapper">
+  <p class="footer-title">Enlaces Rápidos</p>
+
+  <ul>
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="_blank" class="footer-link">
+        Aprende sobre UML
+      </a>
+    </li>
+
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Historia_de_UML" target="_blank" class="footer-link">
+        Historia de UML
+      </a>
+    </li>
+
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Diagrama_de_clases" target="_blank" class="footer-link">
+        Contáctanos para consultas sobre UML
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="wrapper">
+  <p class="footer-title">Información Legal</p>
+
+  <ul>
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad" target="_blank" class="footer-link">
+        Aviso de Privacidad
+      </a>
+    </li>
+
+    <li>
+      <a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_cookies" target="_blank" class="footer-link">
+        Política de Cookies
+      </a>
+    </li>
+
+    <li>
+      <a href="https://es.wikipedia.org/wiki/T%C3%A9rminos_de_servicio" target="_blank" class="footer-link">
+        Términos de Uso
+      </a>
+    </li>
+  </ul>
+</div>
+
+      </div>
+
+      <p class="copyright">
+        &copy; Copyright 2022 <a href="#">
+        DevBlog
+        </a>
+      </p>
+    </footer>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.min.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
